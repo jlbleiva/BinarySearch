@@ -9,8 +9,7 @@ public static class BinarySearch
         int lastpos = input.Length - 1;
         bool found = false;
         int middle;
-
-       
+        
         while (firstpos <= lastpos && found == false)
         {
 
@@ -21,17 +20,12 @@ public static class BinarySearch
             if (value < middlevalue)
             {
                 lastpos = middleindex-1;
-                
             }
             else
             {
                 firstpos =middleindex+1;
             }
         }
-       
-        
-
         return -1;
-
     }
 }
